@@ -71,8 +71,16 @@ void sol () {
   vi arr(k);
   for(auto &it : arr) cin >> it;
   /*
-    using principle of inclusion and exclusion
+    using principle of inclusion and exclusion:
+
     -> using bitmasking to generate all the subsets!
+    
+    kC1 - kC2 + kC3 - kC4 . . . . .  . +- kCk(-ve if k is odd else +ve)
+    
+    Q. How to generate kCx subsets?
+     (i.e. subset made form choosing x elements from k elements)
+    => using bitmask or recursion (for subset generation)
+
   */
 
   ll end = power(2, k);
